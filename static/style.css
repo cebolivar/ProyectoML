@@ -1,0 +1,115 @@
+/* ====== Estilos Generales ====== */
+body {
+  background: #fcfdfc;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+h1 {
+  font-weight: bold;
+  color: #270202;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  transition: color 0.3s ease;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #960b96, #eb5629);
+  border-bottom: 3px solid #4f5763;
+  transition: background 0.3s ease, border 0.3s ease;
+}
+
+.navbar-brand {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+/* Botón dark mode */
+#darkModeToggle {
+  border: none;
+  background: transparent;
+  color: rgb(240, 236, 236);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#darkModeToggle:hover {
+  transform: scale(1.2);
+}
+
+/* Tarjetas */
+.card-custom {
+  background: white;
+  border: none;
+  border-radius: 15px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.card-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
+}
+
+.card-custom h5 {
+  color: #d1c625;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.card-custom p {
+  color: #3d3a14;
+  margin-top: 5px;
+  transition: color 0.3s ease;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(90deg, #eb5629, #960b96);
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* ====== DARK MODE ====== */
+body.dark-mode {
+  background: #1e1e2e;
+  color: #e2e2e2;
+}
+
+body.dark-mode h1 {
+  color: #4dabf7;
+}
+
+body.dark-mode .navbar {
+  background: #111827 !important;
+  border-bottom: 3px solid #4dabf7;
+}
+
+body.dark-mode .card-custom {
+  background: #2a2a3d;
+  color: #e2e2e2;
+  box-shadow: none;
+}
+
+body.dark-mode .card-custom h5 {
+  color: #4dabf7;
+}
+
+body.dark-mode .card-custom p {
+  color: #c9c9d1;
+}
+
+body.dark-mode footer {
+  background: linear-gradient(90deg, #4dabf7, #8b5cf6);
+}

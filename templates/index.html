@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProyectoML</title>
-    <link rel="stylesheet" href="{{url_for('static', filename='apa.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProyectoML</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Tus estilos -->
+  <link rel="stylesheet" href="{{url_for('static', filename='apa.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
 </head>
 <body>
-      <h1 class="text-center my-3">Welcome to {{name}}</h1>
+  <!-- Título -->
+  <h1 class="text-center my-3">Welcome to {{name}}</h1>
 
-  <!-- Navbar con colores Bootstrap -->
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
       <a class="navbar-brand fw-bold" href="#">ProyectoMl</a>
@@ -26,40 +31,68 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Actividad 3</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">casuistica</a></li>
-              <li><a class="dropdown-item" href="#">Proyecto </a></li>
-        
+              <li><a class="dropdown-item" href="#">Casuística</a></li>
+              <li><a class="dropdown-item" href="#">Proyecto</a></li>
             </ul>
           </li>
 
+          <!-- Botón Dark Mode -->
+          <li class="nav-item ms-3">
+            <button id="darkModeToggle" class="btn btn-sm btn-light">🌙</button>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Contenido con dos columnas en PC y una en celular -->
+  <!-- Contenido -->
   <div class="container my-4">
     <div class="row g-3">
       <div class="col-md-6 col-12">
-        <div class="p-3 bg-light border rounded shadow-sm">
-          <h5 class="text-primary">Cesar Eduardo Bolivar Gonzalez</h5>
-          <p>Estudiante Ingenieria de Sistemas y computacion</p>
+        <div class="card-custom shadow-sm">
+          <h5>Cesar Eduardo Bolivar Gonzalez</h5>
+          <p>Estudiante Ingeniería de Sistemas y Computación</p>
         </div>
       </div>
       <div class="col-md-6 col-12">
-        <div class="p-3 bg-light border rounded shadow-sm">
-          <h5 class="text-primary">Angie Tatiana Velasquez Quiroga</h5>
-          <p>Estudiante Ingenieria de Sistemas y computacion</p>
+        <div class="card-custom shadow-sm">
+          <h5>Angie Tatiana Velasquez Quiroga</h5>
+          <p>Estudiante Ingeniería de Sistemas y Computación</p>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3 mt-4">
+  <footer class="text-white text-center py-3 mt-4">
     <p class="mb-0">© 2025 FlaskApp | Diseñado con Bootstrap 💙</p>
   </footer>
 
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script Dark Mode -->
+  <script>
+    const toggleBtn = document.getElementById("darkModeToggle");
+    const body = document.body;
+
+    // Revisar preferencia previa
+    if (localStorage.getItem("dark-mode") === "enabled") {
+      body.classList.add("dark-mode");
+      toggleBtn.textContent = "☀️";
+    }
+
+    toggleBtn.addEventListener("click", () => {
+      body.classList.toggle("dark-mode");
+
+      if (body.classList.contains("dark-mode")) {
+        localStorage.setItem("dark-mode", "enabled");
+        toggleBtn.textContent = "☀️";
+      } else {
+        localStorage.setItem("dark-mode", "disabled");
+        toggleBtn.textContent = "🌙";
+      }
+    });
+  </script>
 </body>
 </html>

@@ -5,11 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProyectoML</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='apa.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
 </head>
 <body>
-     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <h1 class="text-center my-3">Welcome to {{name}}</h1>
+
+  <!-- Navbar con colores Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
-      <a class="navbar-brand fw-bold" href="#">ProyectoML</a>
+      <a class="navbar-brand fw-bold" href="#">ProyectoMl</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -21,37 +26,9 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Actividad 3</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="Caso1">Análisis predictivos</a></li>
-              <li><a class="dropdown-item" href="Caso2">Segmentación de clientes</a></li>
-              <li><a class="dropdown-item" href="Caso3">Detección de spam</a></li>
-              <li><a class="dropdown-item" href="Caso4">Forecasting</a></li>
-            </ul>
-          </li>
-
-          <!-- Actividad 4 -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Actividad 4</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="Actividad4">Turismo</a></li>
-            </ul>
-          </li>
-
-          <!-- Actividad 5 -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Actividad 5</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="confusion_matrix">Matriz</a></li>
-              <li><a class="dropdown-item" href="confusion_matrix_planpremium">Matriz Plan Premium</a></li>
-              <li><a class="dropdown-item" href="ConceptosBasicos">Conceptos básicos</a></li>
-            </ul>
-          </li>
-
-          <!-- Actividad 6-->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Tipos de Algoritmos de Clasificación</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="mapaconceptual">Conceptos básicos</a></li>
-              <li><a class="dropdown-item" href="CasoPracticoPeliculas">Caso Práctico</a></li>
+              <li><a class="dropdown-item" href="#">casuistica</a></li>
+              <li><a class="dropdown-item" href="#">Proyecto </a></li>
+        
             </ul>
           </li>
 
@@ -59,5 +36,30 @@
       </div>
     </div>
   </nav>
+
+  <!-- Contenido con dos columnas en PC y una en celular -->
+  <div class="container my-4">
+    <div class="row g-3">
+      <div class="col-md-6 col-12">
+        <div class="p-3 bg-light border rounded shadow-sm">
+          <h5 class="text-primary">Cesar Eduardo Bolivar Gonzalez</h5>
+          <p>Estudiante Ingenieria de Sistemas y computacion</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-12">
+        <div class="p-3 bg-light border rounded shadow-sm">
+          <h5 class="text-primary">Angie Tatiana Velasquez Quiroga</h5>
+          <p>Estudiante Ingenieria de Sistemas y computacion</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-4">
+    <p class="mb-0">© 2025 FlaskApp | Diseñado con Bootstrap 💙</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

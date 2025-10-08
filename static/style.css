@@ -1,6 +1,6 @@
 /* ====== Estilos Generales ====== */
 body {
-  background: #fcfdfc;
+  background: #989c98;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
@@ -16,7 +16,7 @@ h1 {
 
 /* Navbar */
 .navbar {
-  background: linear-gradient(90deg, #960b96, #eb5629);
+  background: linear-gradient(90deg, #aa92aa, #98c6f0);
   border-bottom: 3px solid #4f5763;
   transition: background 0.3s ease, border 0.3s ease;
 }
@@ -42,7 +42,7 @@ h1 {
 
 /* Tarjetas */
 .card-custom {
-  background: white;
+  background: rgb(250, 229, 229);
   border: none;
   border-radius: 15px;
   padding: 20px;
@@ -56,7 +56,7 @@ h1 {
 }
 
 .card-custom h5 {
-  color: #d1c625;
+  color: #818068;
   font-weight: 600;
   transition: color 0.3s ease;
 }
@@ -69,8 +69,8 @@ h1 {
 
 /* Footer */
 footer {
-  background: linear-gradient(90deg, #eb5629, #960b96);
-  color: white;
+  background: linear-gradient(90deg, #98c6f0, #aa92aa);
+  color: rgb(114, 108, 108);
   padding: 15px 0;
   text-align: center;
   transition: background 0.3s ease;

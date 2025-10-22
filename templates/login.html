@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Iniciar Sesión</h1>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <p style="color: red;">{{ message }}</p>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    <form method="POST" action="{{ url_for('login') }}">
+        <div>
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <br>
+        <div>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <br>
+        <button type="submit">Entrar</button>
+    </form>
+    
+    <p>Para probar, usa:</p>
+    <ul>
+        <li>**Usuario:** admin</li>
+        <li>**Contraseña:** pass123</li>
+    </ul>
+</body>
+</html>

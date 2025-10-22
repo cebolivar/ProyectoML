@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Bienvenido, {{ username }}! </h1>
+    
+    <p>¡Esta es una página protegida! Solo puedes ver esto si has iniciado sesión.</p>
+    
+    <a href="{{ url_for('logout') }}">Cerrar Sesión</a>
+</body>
+</html>

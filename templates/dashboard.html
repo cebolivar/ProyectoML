@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Dashboard</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="{{url_for('static', filename='apa.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
 </head>
 <body>
     <h1>Bienvenido, {{ username }}! </h1>
     
     <p>¡Esta es una página protegida! Solo puedes ver esto si has iniciado sesión.</p>
+    <a class="navbar-brand fw-bold" href="index">ProyectoMl</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     
     <a href="{{ url_for('logout') }}">Cerrar Sesión</a>
 </body>

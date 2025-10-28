@@ -64,3 +64,13 @@ h1 {
     font-weight: 600;
     color: #007bff; /* Un azul brillante para los títulos de las tarjetas */
 }
+/* ...existing code... */
+
+.logo-img {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  object-fit: contain;
+}
+
+/* ...existing code... */

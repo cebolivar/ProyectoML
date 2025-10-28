@@ -1,37 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Registro</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{url_for('static', filename='apa.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+  <meta charset="UTF-8">
+  <title>Registro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='apa.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Registro de Nuevo Usuario</h1>
+  <div class="container vh-100 d-flex align-items-center justify-content-center">
+    <div class="card shadow-sm p-4" style="max-width:420px; width:100%; border-radius:12px;">
+      <div class="text-center mb-3">
+        <img src="{{ url_for('static', filename='lock-circle-svgrepo-com.svg') }}"
+             alt="seguridad" class="logo-img">
+      </div>
 
-    {% with messages = get_flashed_messages(with_categories=true) %}
+      <h3 class="text-center mb-3">Registro de Nuevo Usuario</h3>
+
+      {% with messages = get_flashed_messages(with_categories=true) %}
         {% if messages %}
-            {% for category, message in messages %}
-                <p class="{% if category == 'error' %}text-danger{% else %}text-primary{% endif %}">{{ message }}</p>
-            {% endfor %}
+          {% for category, message in messages %}
+            <div class="alert alert-{{ 'danger' if category == 'error' else category }} py-2" role="alert">
+              {{ message }}
+            </div>
+          {% endfor %}
         {% endif %}
-    {% endwith %}
+      {% endwith %}
 
-    <form method="POST" action="{{ url_for('register') }}">
-        <div>
-            <label for="username">Usuario (Nuevo):</label>
-            <input type="text" id="username" name="username" required>
+      <form method="POST" action="{{ url_for('register') }}">
+        <div class="mb-3">
+          <label for="username" class="form-label">Usuario</label>
+          <input type="text" id="username" name="username" class="form-control" required autofocus>
         </div>
-        <br>
-        <div>
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required>
+
+        <div class="mb-3">
+          <label for="password" class="form-label">Contraseña</label>
+          <input type="password" id="password" name="password" class="form-control" required>
         </div>
-        <br>
-        <button type="submit">Registrar</button>
-    </form>
-    
-    <p>¿Ya tienes cuenta? <a href="{{ url_for('login') }}">Inicia Sesión aquí</a>.</p>
+
+        <div class="d-grid">
+          <button type="submit" class="btn btn-primary">Registrar</button>
+        </div>
+      </form>
+
+      <div class="text-center mt-3">
+        <small>¿Ya tienes cuenta? <a href="{{ url_for('login') }}">Inicia sesión</a></small>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

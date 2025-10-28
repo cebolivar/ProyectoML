@@ -1,0 +1,201 @@
+﻿id_usuario;nombre_usuario;tipo_usuario;tipo;marca;modelo;anio;estado_fisico;encendido;fallas;ram;almacenamiento;descripcion;destino;prediccion_ml
+1;Joseph Adams;Beneficiario;Monitor;Huawei;UltraWide 29;2018;8;1;1;8;512;Teclado y touchpad en óptimo estado;Reacondicionamiento;No funcional
+2;Mary Butler;Administrador;PC;Toshiba;iPhone X;2020;4;0;3;2;512;No enciende, posible daño en placa base;Educativo;No funcional
+3;Scott Arias;Técnico;Laptop;Lenovo;IdeaPad 3;2020;6;1;2;2;256;Teclado y touchpad en óptimo estado;Reacondicionamiento;No funcional
+4;Stephanie Glenn;Beneficiario;Impresora;Dell;MatePad 10;2014;9;1;0;8;32;Presenta errores de arranque en BIOS;Educativo;Funcional
+5;Robert Schneider;Técnico;Tablet;LG;Inspiron 14;2016;6;0;0;8;256;Puerto HDMI funcional, VGA sin señal;Reacondicionamiento;Semi-funcional
+6;Jared Brooks;Donante;Celular;Dell;VivoBook X;2013;3;1;3;4;32;Altavoces no emiten sonido;Reciclaje;Semi-funcional
+7;Theresa Wallace;Técnico;PC;Dell;Pavilion 15;2020;8;1;0;2;32;Puerto USB no funciona correctamente;Reacondicionamiento;No funcional
+8;Carmen Watson;Beneficiario;Impresora;Apple;Inspiron 14;2022;3;1;2;2;32;Problemas de sobrecalentamiento al ejecutar tareas pesadas;Educativo;Semi-funcional
+9;Robert Kennedy;Beneficiario;Tablet;Toshiba;VivoBook X;2020;8;1;3;2;128;Teclado y touchpad en óptimo estado;Reacondicionamiento;No funcional
+10;Charles Adams;Donante;Tablet;Huawei;VivoBook X;2017;5;1;2;4;256;Conector de carga suelto, requiere ajuste;Educativo;Semi-funcional
+11;Robert Sanders;Técnico;Celular;Apple;MatePad 10;2022;10;1;3;16;128;Pantalla rota, necesita reemplazo;Reciclaje;Funcional
+12;Barbara Bennett;Técnico;Monitor;LG;VivoBook X;2016;4;1;1;4;256;Presenta errores de arranque en BIOS;Reacondicionamiento;No funcional
+13;Dr. Michael Chandler MD;Donante;PC;Apple;MatePad 10;2017;1;0;3;16;128;Problemas de sobrecalentamiento al ejecutar tareas pesadas;Reciclaje;Funcional
+14;Timothy York;Administrador;Monitor;Samsung;VivoBook X;2023;2;0;2;2;128;Funcionamiento estable tras formateo;Reciclaje;Funcional
+15;Richard Reed;Técnico;Tablet;Dell;Pavilion 15;2022;10;0;0;16;64;Carcasa dañada pero componentes internos intactos;Educativo;Funcional
+16;William Wolfe;Técnico;PC;HP;MatePad 10;2018;5;0;1;16;512;Batería descargada, requiere cambio;Reacondicionamiento;No funcional
+17;Dawn Henderson;Donante;PC;Lenovo;Inspiron 14;2014;9;1;3;8;32;Altavoces no emiten sonido;Reacondicionamiento;Funcional
+18;Monica Reeves;Beneficiario;PC;Apple;UltraWide 29;2019;5;0;3;16;32;Presenta errores de arranque en BIOS;Reacondicionamiento;No funcional
+19;Antonio Barnes;Beneficiario;Laptop;LG;VivoBook X;2013;8;1;0;8;128;No enciende, posible daño en placa base;Reciclaje;Semi-funcional
+20;Casey Turner;Técnico;Celular;ASUS;Pavilion 15;2019;7;1;1;16;512;Sensor táctil presenta errores intermitentes;Reciclaje;No funcional
+21;Christian Werner;Beneficiario;PC;Samsung;Pavilion 15;2019;5;1;0;8;128;Funcionamiento estable tras formateo;Reacondicionamiento;Funcional
+22;Denise Thompson;Técnico;Celular;HP;Satellite C55;2012;9;1;2;4;512;Pantalla con rayones leves, funcional;Reacondicionamiento;Semi-funcional
+23;Brandon Orr;Donante;Impresora;Samsung;iPhone X;2014;10;1;3;2;32;Batería inflada, debe ser reemplazada;Reacondicionamiento;Funcional
+24;Dr. Deborah Soto;Beneficiario;Celular;Samsung;Inspiron 14;2016;5;0;3;16;512;Funcionamiento estable tras formateo;Reciclaje;Semi-funcional
+25;Erin Cain;Administrador;Laptop;LG;Galaxy A20;2022;2;0;3;16;128;Altavoces no emiten sonido;Educativo;No funcional
+26;Mr. Michael Daugherty;Técnico;Laptop;HP;Pavilion 15;2013;10;1;1;16;512;Carcasa dañada pero componentes internos intactos;Reacondicionamiento;Semi-funcional
+27;Angela Hayden;Beneficiario;Tablet;Samsung;Pavilion 15;2012;1;0;1;16;512;Pantalla rota, necesita reemplazo;Reacondicionamiento;No funcional
+28;Stephanie Holloway;Técnico;Laptop;Samsung;Inspiron 14;2024;5;1;1;2;32;Pantalla en buen estado y batería funcional;Reacondicionamiento;No funcional
+29;Karen Walker;Donante;Impresora;Dell;UltraWide 29;2018;3;0;0;16;64;Disco duro con sectores dañados;Reciclaje;Funcional
+30;Katrina King;Técnico;PC;Lenovo;Aspire 5;2013;9;0;2;8;256;No enciende, posible daño en placa base;Reciclaje;No funcional
+31;Jill James;Técnico;Laptop;LG;Inspiron 14;2013;7;0;3;4;64;Conector de carga suelto, requiere ajuste;Reciclaje;Funcional
+32;Gloria Cooper;Donante;Laptop;Lenovo;Pavilion 15;2012;4;1;2;2;128;Pantalla rota, necesita reemplazo;Educativo;No funcional
+33;Alexis Campbell;Técnico;Celular;Dell;MatePad 10;2020;9;1;1;4;128;Conector de carga suelto, requiere ajuste;Reacondicionamiento;No funcional
+34;Dr. Jeffrey Brown;Administrador;Impresora;Samsung;iPhone X;2018;1;0;3;16;64;Puerto HDMI funcional, VGA sin señal;Reacondicionamiento;Semi-funcional
+35;Christy Montoya;Administrador;Impresora;Toshiba;VivoBook X;2018;4;0;3;2;128;Batería descargada, requiere cambio;Educativo;Funcional
+36;Sean Duran;Administrador;Celular;Huawei;Inspiron 14;2022;8;1;1;4;64;Pantalla en buen estado y batería funcional;Reciclaje;No funcional
+37;Zachary Castillo;Donante;Impresora;Acer;iPhone X;2022;8;1;3;4;256;Presenta errores de arranque en BIOS;Reacondicionamiento;No funcional
+38;Kimberly Ruiz;Donante;Tablet;Dell;UltraWide 29;2016;5;1;1;2;512;Presenta errores de arranque en BIOS;Reciclaje;No funcional
+39;Travis Bailey;Técnico;PC;Acer;IdeaPad 3;2020;10;1;1;8;512;Batería descargada, requiere cambio;Reacondicionamiento;Semi-funcional
+40;Katherine Gray;Beneficiario;Tablet;HP;Galaxy A20;2017;1;1;2;8;128;Disco duro con sectores dañados;Educativo;Funcional
+41;Alison Hernandez;Donante;Tablet;ASUS;MatePad 10;2021;6;1;1;8;32;Altavoces no emiten sonido;Reciclaje;Semi-funcional
+42;Albert Hudson;Donante;Celular;Toshiba;Pavilion 15;2014;1;0;2;16;256;Falla en teclado, necesita reemplazo de teclas;Reciclaje;Semi-funcional
+43;Lynn Schwartz;Técnico;Impresora;Lenovo;Galaxy A20;2018;2;1;2;4;64;Problemas de sobrecalentamiento al ejecutar tareas pesadas;Reacondicionamiento;Funcional
+44;Andrea Fritz;Donante;Tablet;Acer;Aspire 5;2022;7;0;2;16;128;Puerto USB no funciona correctamente;Reacondicionamiento;No funcional
+45;Gabrielle Reed;Donante;Tablet;Toshiba;IdeaPad 3;2023;4;0;3;4;256;Disco duro con sectores dañados;Reacondicionamiento;Funcional
+46;Colton Wise;Donante;Celular;ASUS;Inspiron 14;2015;4;1;3;16;32;Sistema operativo desactualizado;Reciclaje;Funcional
+47;Mario Matthews;Donante;Celular;ASUS;VivoBook X;2018;3;1;1;4;64;Funcionamiento estable tras formateo;Reacondicionamiento;Funcional
+48;Nichole Cortez;Administrador;Monitor;Toshiba;VivoBook X;2013;1;0;0;4;256;Falla en teclado, necesita reemplazo de teclas;Educativo;Semi-funcional
+49;Savannah Bean;Beneficiario;Celular;Apple;Satellite C55;2024;3;1;0;8;128;Funcionamiento estable tras formateo;Reacondicionamiento;No funcional
+50;Shannon Foster;Técnico;Tablet;Huawei;IdeaPad 3;2022;3;1;1;2;64;Carcasa dañada pero componentes internos intactos;Educativo;Funcional
+51;Lauren Brooks;Donante;Celular;Toshiba;Galaxy A20;2012;1;0;3;4;64;Pantalla en buen estado y batería funcional;Educativo;Semi-funcional
+52;Jason Evans;Administrador;Laptop;Huawei;Inspiron 14;2022;7;1;0;4;512;Pantalla con rayones leves, funcional;Educativo;Funcional
+53;John Nelson;Donante;Celular;Lenovo;MatePad 10;2021;9;0;1;2;256;Puerto USB no funciona correctamente;Educativo;Funcional
+54;Richard Collins;Beneficiario;Celular;Acer;VivoBook X;2018;5;0;1;8;128;Puerto HDMI funcional, VGA sin señal;Educativo;No funcional
+55;Jose Armstrong;Donante;PC;Samsung;IdeaPad 3;2023;8;1;1;8;256;Funcionamiento estable tras formateo;Reacondicionamiento;Funcional
+56;Peter Contreras;Beneficiario;Laptop;ASUS;Galaxy A20;2013;4;0;2;16;256;Puerto HDMI funcional, VGA sin señal;Reciclaje;Semi-funcional
+57;Michael Hall;Técnico;Impresora;HP;iPhone X;2023;9;0;0;8;64;Presenta errores de arranque en BIOS;Reacondicionamiento;Funcional
+58;Brian Joseph;Beneficiario;Impresora;Apple;Satellite C55;2018;5;1;2;2;64;Pantalla con rayones leves, funcional;Reacondicionamiento;Semi-funcional
+59;Elaine Perez;Donante;Laptop;ASUS;MatePad 10;2017;4;1;1;4;256;Conector de carga suelto, requiere ajuste;Educativo;No funcional
+60;David Martinez;Donante;Tablet;LG;Inspiron 14;2023;5;0;3;4;32;Batería descargada, requiere cambio;Educativo;Semi-funcional
+61;Jimmy Wolfe;Técnico;Impresora;LG;Satellite C55;2023;7;1;3;2;128;Cámara no detectada por el sistema;Reacondicionamiento;No funcional
+62;Wayne Adkins;Administrador;Tablet;Toshiba;Pavilion 15;2015;6;1;3;2;256;Pantalla en buen estado y batería funcional;Reciclaje;Semi-funcional
+63;Sara Nelson;Administrador;PC;Huawei;Galaxy A20;2014;9;0;3;4;256;Sistema operativo desactualizado;Reciclaje;Funcional
+64;Christopher Sanchez;Administrador;Tablet;Apple;Pavilion 15;2024;2;0;2;4;256;Cámara no detectada por el sistema;Educativo;Semi-funcional
+65;Peter Kelley;Donante;Monitor;HP;iPhone X;2013;6;1;2;16;128;Pantalla en buen estado y batería funcional;Educativo;No funcional
+66;Jacob Spencer;Beneficiario;PC;Samsung;iPhone X;2018;9;0;0;2;256;Puerto USB no funciona correctamente;Reciclaje;Semi-funcional
+67;Amy Juarez;Técnico;Impresora;Toshiba;VivoBook X;2018;7;0;0;2;64;Altavoces no emiten sonido;Reacondicionamiento;No funcional
+68;Shannon Scott;Administrador;Impresora;Dell;Pavilion 15;2019;1;1;3;4;32;Pantalla con rayones leves, funcional;Educativo;No funcional
+69;Brenda Russell;Administrador;Laptop;Acer;Pavilion 15;2013;5;1;1;16;64;No enciende, posible daño en placa base;Educativo;Funcional
+70;Amy Moses;Técnico;Impresora;Dell;IdeaPad 3;2022;9;0;2;4;32;Conector de carga suelto, requiere ajuste;Educativo;Funcional
+71;Robert Miller;Administrador;Celular;Samsung;Pavilion 15;2024;3;1;0;8;256;Sensor táctil presenta errores intermitentes;Reacondicionamiento;No funcional
+72;Toni Simmons;Donante;Laptop;Acer;UltraWide 29;2015;2;1;1;8;64;Batería descargada, requiere cambio;Reacondicionamiento;No funcional
+73;Daniel Mcmillan;Técnico;PC;Lenovo;Inspiron 14;2019;7;1;3;2;32;No enciende, posible daño en placa base;Reacondicionamiento;No funcional
+74;Mr. Brian Rojas;Beneficiario;Celular;HP;iPhone X;2022;9;0;1;8;512;Pantalla en buen estado y batería funcional;Reciclaje;No funcional
+75;Tami Stewart;Técnico;Tablet;ASUS;Satellite C55;2019;2;1;3;8;32;Puerto USB no funciona correctamente;Educativo;Semi-funcional
+76;Phyllis Blankenship;Administrador;Tablet;Lenovo;VivoBook X;2015;10;1;0;2;256;Funcionamiento estable tras formateo;Reciclaje;No funcional
+77;Tracy Yu;Beneficiario;Impresora;LG;MatePad 10;2022;3;1;3;4;64;Altavoces no emiten sonido;Reacondicionamiento;Semi-funcional
+78;James Frederick;Beneficiario;PC;Apple;Pavilion 15;2018;7;1;2;8;512;Puerto USB no funciona correctamente;Educativo;Semi-funcional
+79;Eddie Foster;Donante;Laptop;Samsung;Satellite C55;2019;5;0;2;16;64;Batería descargada, requiere cambio;Reciclaje;No funcional
+80;Kathleen Bowman;Beneficiario;PC;Dell;Galaxy A20;2015;8;0;3;2;256;Presenta errores de arranque en BIOS;Educativo;Semi-funcional
+81;Olivia Rose;Beneficiario;Celular;Acer;Inspiron 14;2017;1;1;0;2;128;Altavoces no emiten sonido;Reciclaje;Funcional
+82;Sandra Matthews;Beneficiario;Tablet;Acer;UltraWide 29;2016;2;0;0;8;32;Cámara no detectada por el sistema;Educativo;Semi-funcional
+83;Timothy Cox;Beneficiario;Tablet;Acer;Satellite C55;2022;6;1;2;4;512;Puerto HDMI funcional, VGA sin señal;Reacondicionamiento;No funcional
+84;Matthew Robbins;Técnico;Impresora;HP;Galaxy A20;2022;9;0;0;4;128;Sensor táctil presenta errores intermitentes;Reciclaje;No funcional
+85;Lisa Turner;Administrador;Laptop;Apple;Inspiron 14;2023;6;1;0;16;64;Funcionamiento estable tras formateo;Reciclaje;Semi-funcional
+86;Brian Bishop;Donante;Monitor;Acer;iPhone X;2020;2;1;0;16;64;Batería inflada, debe ser reemplazada;Reciclaje;Funcional
+87;Cory Moss;Administrador;Monitor;Huawei;Aspire 5;2022;4;0;2;8;256;Teclado y touchpad en óptimo estado;Reciclaje;Funcional
+88;Amy Keller;Beneficiario;Tablet;Samsung;VivoBook X;2017;8;0;3;16;256;Sistema operativo desactualizado;Reacondicionamiento;No funcional
+89;Caleb Gay;Técnico;Monitor;Samsung;Aspire 5;2021;6;1;3;16;256;No enciende, posible daño en placa base;Reacondicionamiento;Funcional
+90;Kathryn Shannon;Técnico;Tablet;HP;Satellite C55;2016;1;1;3;4;128;Puerto HDMI funcional, VGA sin señal;Reciclaje;Funcional
+91;Kelly Porter;Donante;Impresora;Samsung;Galaxy A20;2023;3;0;2;16;64;Cámara no detectada por el sistema;Reciclaje;No funcional
+92;Michele Lane;Técnico;Monitor;Toshiba;Satellite C55;2012;5;0;2;4;64;Altavoces no emiten sonido;Educativo;Funcional
+93;Juan Pierce;Donante;PC;Toshiba;UltraWide 29;2012;9;0;3;4;512;Teclado y touchpad en óptimo estado;Reciclaje;Semi-funcional
+94;Jorge Marsh;Beneficiario;Celular;Apple;Inspiron 14;2024;6;1;1;8;32;Pantalla rota, necesita reemplazo;Reacondicionamiento;Semi-funcional
+95;Caitlin Drake;Administrador;Laptop;Samsung;Pavilion 15;2017;6;1;1;2;256;Altavoces no emiten sonido;Reciclaje;Funcional
+96;Michael Dalton;Beneficiario;Monitor;Acer;Pavilion 15;2017;2;0;3;8;32;Falla en teclado, necesita reemplazo de teclas;Educativo;No funcional
+97;Sarah Beck;Administrador;Impresora;Acer;MatePad 10;2016;4;0;2;2;64;Batería inflada, debe ser reemplazada;Reacondicionamiento;No funcional
+98;Katrina Lopez;Técnico;Impresora;Toshiba;Inspiron 14;2015;1;0;1;4;256;Carcasa dañada pero componentes internos intactos;Reciclaje;Funcional
+99;Peter Calderon;Beneficiario;PC;ASUS;Galaxy A20;2021;4;0;0;2;32;Puerto HDMI funcional, VGA sin señal;Educativo;Funcional
+100;Alexander Douglas;Técnico;PC;Acer;Galaxy A20;2017;5;1;3;16;512;Carcasa dañada pero componentes internos intactos;Reacondicionamiento;Funcional
+101;Harold Jordan;Administrador;PC;Lenovo;iPhone X;2022;7;1;2;8;64;Funcionamiento estable tras formateo;Educativo;No funcional
+102;Justin Downs;Administrador;Celular;Dell;MatePad 10;2018;9;1;1;16;32;Sistema operativo desactualizado;Reciclaje;No funcional
+103;Lori Blankenship;Administrador;Monitor;Apple;UltraWide 29;2018;10;0;3;16;512;Pantalla rota, necesita reemplazo;Reacondicionamiento;Funcional
+104;Tanya Cruz MD;Donante;Monitor;Apple;VivoBook X;2018;8;1;2;4;64;Conector de carga suelto, requiere ajuste;Educativo;Funcional
+105;Stephen Best;Técnico;Celular;LG;Inspiron 14;2013;3;0;3;4;256;Problemas de sobrecalentamiento al ejecutar tareas pesadas;Reciclaje;Funcional
+106;Rhonda Gonzales;Administrador;Laptop;Lenovo;Inspiron 14;2013;1;1;1;16;32;Pantalla en buen estado y batería funcional;Reacondicionamiento;Semi-funcional
+107;Eric Garrett;Administrador;PC;ASUS;UltraWide 29;2017;6;1;2;8;32;Puerto USB no funciona correctamente;Reacondicionamiento;No funcional
+108;Alexis Myers;Administrador;Impresora;LG;iPhone X;2012;2;1;1;8;128;Presenta errores de arranque en BIOS;Educativo;Semi-funcional
+109;Barbara Bass;Beneficiario;Celular;Toshiba;Pavilion 15;2019;5;0;2;2;512;Disco duro con sectores dañados;Reciclaje;No funcional
+110;Steven Nguyen;Donante;Laptop;ASUS;VivoBook X;2012;5;0;1;2;64;Sistema operativo desactualizado;Educativo;No funcional
+111;Mary Clark;Donante;Tablet;Apple;MatePad 10;2014;10;1;0;2;64;Funcionamiento estable tras formateo;Educativo;Semi-funcional
+112;Lisa Obrien MD;Beneficiario;PC;ASUS;Satellite C55;2021;7;1;3;4;32;Problemas de sobrecalentamiento al ejecutar tareas pesadas;Reacondicionamiento;Semi-funcional
+113;Anna Cooper;Donante;Impresora;ASUS;Satellite C55;2015;1;0;1;8;128;Funcionamiento estable tras formateo;Educativo;Funcional
+114;Susan Brown;Beneficiario;Impresora;Samsung;IdeaPad 3;2018;9;0;0;4;64;Pantalla con rayones leves, funcional;Reacondicionamiento;No funcional
+115;Nicholas Garrett;Donante;PC;Huawei;Inspiron 14;2015;6;0;2;4;64;Batería inflada, debe ser reemplazada;Educativo;Semi-funcional
+116;Patricia Jones;Beneficiario;PC;Dell;IdeaPad 3;2013;6;0;0;8;32;Puerto USB no funciona correctamente;Educativo;Semi-funcional
+117;Dana Smith;Técnico;Laptop;Toshiba;Pavilion 15;2022;6;1;1;16;512;Cámara no detectada por el sistema;Reciclaje;No funcional
+118;Trevor Medina;Técnico;Celular;Apple;Satellite C55;2024;2;1;1;4;32;Problemas de sobrecalentamiento al ejecutar tareas pesadas;Reacondicionamiento;Funcional
+119;Cassandra Burch;Administrador;Impresora;Huawei;Galaxy A20;2012;3;1;1;8;512;Falla en teclado, necesita reemplazo de teclas;Educativo;No funcional
+120;Sarah Conner;Beneficiario;PC;LG;Inspiron 14;2023;2;0;1;16;32;Sistema operativo desactualizado;Reciclaje;Funcional
+121;Erica Webb;Beneficiario;Celular;Toshiba;Inspiron 14;2014;9;0;1;2;32;Altavoces no emiten sonido;Educativo;Semi-funcional
+122;Sonia Tanner;Administrador;Impresora;Dell;IdeaPad 3;2018;9;0;3;4;512;No enciende, posible daño en placa base;Reacondicionamiento;Semi-funcional
+123;Todd Clark;Administrador;Celular;ASUS;VivoBook X;2016;3;1;2;4;128;Carcasa dañada pero componentes internos intactos;Educativo;Semi-funcional
+124;Shelby Shah;Beneficiario;PC;Apple;iPhone X;2017;7;1;1;2;128;Batería inflada, debe ser reemplazada;Educativo;Semi-funcional
+125;Billy Golden;Administrador;Monitor;Acer;iPhone X;2013;8;1;1;2;64;Sensor táctil presenta errores intermitentes;Reacondicionamiento;No funcional
+126;Lisa Lamb;Beneficiario;PC;Acer;iPhone X;2012;6;0;1;16;512;Disco duro con sectores dañados;Educativo;Funcional
+127;Alejandra Wilson;Administrador;Tablet;Acer;UltraWide 29;2012;8;1;3;2;64;Falla en teclado, necesita reemplazo de teclas;Reciclaje;No funcional
+128;Jonathon Hunt;Beneficiario;PC;Apple;Galaxy A20;2020;9;0;2;4;256;Batería inflada, debe ser reemplazada;Reciclaje;No funcional
+129;Robert Coleman;Técnico;Impresora;Apple;Galaxy A20;2012;10;0;3;2;256;Batería inflada, debe ser reemplazada;Reciclaje;Funcional
+130;Kathy Hernandez;Administrador;Celular;Lenovo;IdeaPad 3;2022;6;0;1;16;64;Cámara no detectada por el sistema;Educativo;Funcional
+131;Steven Ellis;Donante;Tablet;Toshiba;VivoBook X;2021;9;0;2;16;32;Altavoces no emiten sonido;Educativo;Semi-funcional
+132;Shawn Ball;Técnico;Monitor;Apple;Aspire 5;2021;10;1;1;4;256;Altavoces no emiten sonido;Reacondicionamiento;Funcional
+133;Barbara Mitchell;Donante;Impresora;LG;VivoBook X;2020;6;0;2;8;64;Presenta errores de arranque en BIOS;Reciclaje;Semi-funcional
+134;Joshua Harris;Donante;Impresora;Acer;Satellite C55;2016;8;1;0;2;256;Presenta errores de arranque en BIOS;Educativo;Semi-funcional
+135;Christopher Miller;Donante;Laptop;Lenovo;MatePad 10;2012;8;0;2;2;128;Pantalla en buen estado y batería funcional;Reacondicionamiento;Semi-funcional
+136;Deborah Mcfarland;Administrador;Celular;Apple;Inspiron 14;2013;2;1;0;16;256;Problemas de sobrecalentamiento al ejecutar tareas pesadas;Reciclaje;Funcional
+137;Jose Olson;Técnico;Celular;Lenovo;VivoBook X;2016;5;0;3;8;128;Cámara no detectada por el sistema;Reciclaje;Semi-funcional
+138;Barbara Brown;Beneficiario;Laptop;HP;VivoBook X;2022;9;1;1;2;32;Presenta errores de arranque en BIOS;Educativo;Funcional
+139;Rachel Smith;Beneficiario;Impresora;ASUS;IdeaPad 3;2017;5;0;3;8;512;Batería descargada, requiere cambio;Reacondicionamiento;Funcional
+140;Kayla Moore;Donante;Impresora;Dell;Inspiron 14;2021;6;1;1;16;256;Puerto HDMI funcional, VGA sin señal;Reciclaje;No funcional
+141;Emily Stanley;Beneficiario;Laptop;Dell;iPhone X;2019;5;0;2;8;128;Altavoces no emiten sonido;Educativo;Semi-funcional
+142;Caitlin Evans;Beneficiario;Laptop;Toshiba;Galaxy A20;2013;10;0;3;8;32;Batería descargada, requiere cambio;Reacondicionamiento;No funcional
+143;Tara Campbell MD;Beneficiario;Impresora;Samsung;Satellite C55;2019;9;0;2;16;512;Puerto USB no funciona correctamente;Reacondicionamiento;Semi-funcional
+144;Robyn Terry;Técnico;Laptop;Toshiba;UltraWide 29;2019;1;0;2;2;256;Problemas de sobrecalentamiento al ejecutar tareas pesadas;Reacondicionamiento;Funcional
+145;Julia Castillo;Técnico;Impresora;HP;MatePad 10;2015;2;0;2;2;128;Puerto USB no funciona correctamente;Reacondicionamiento;No funcional
+146;Michaela Freeman DDS;Donante;Celular;Lenovo;MatePad 10;2019;7;0;0;2;64;Carcasa dañada pero componentes internos intactos;Reciclaje;Funcional
+147;Christine Ramirez;Técnico;Monitor;Apple;Inspiron 14;2017;6;1;3;2;32;Pantalla rota, necesita reemplazo;Reciclaje;Semi-funcional
+148;Pamela Hughes;Administrador;PC;LG;iPhone X;2024;6;0;2;2;64;Carcasa dañada pero componentes internos intactos;Reciclaje;Funcional
+149;Heather Smith;Administrador;Impresora;LG;iPhone X;2014;4;0;3;2;256;Pantalla con rayones leves, funcional;Reacondicionamiento;Semi-funcional
+150;Robin King;Donante;Laptop;Acer;VivoBook X;2017;7;0;3;16;128;Altavoces no emiten sonido;Educativo;Funcional
+151;Jamie Thomas;Beneficiario;Impresora;Acer;iPhone X;2022;7;1;1;2;256;Pantalla rota, necesita reemplazo;Reciclaje;Funcional
+152;Teresa Pratt;Donante;Laptop;HP;UltraWide 29;2016;6;1;2;8;64;Altavoces no emiten sonido;Educativo;Funcional
+153;Lori Simon;Beneficiario;Celular;Dell;Pavilion 15;2018;10;1;3;4;256;Teclado y touchpad en óptimo estado;Reciclaje;No funcional
+154;Mrs. Jennifer Tran MD;Técnico;Laptop;Dell;Aspire 5;2021;9;1;1;2;32;Problemas de sobrecalentamiento al ejecutar tareas pesadas;Reciclaje;Funcional
+155;Megan Frederick;Técnico;PC;Samsung;Galaxy A20;2023;2;1;0;16;64;Pantalla rota, necesita reemplazo;Educativo;No funcional
+156;Daniel Hart;Beneficiario;Laptop;Acer;Pavilion 15;2014;4;1;3;8;256;Batería inflada, debe ser reemplazada;Reacondicionamiento;Funcional
+157;Sydney Wade;Donante;Laptop;Lenovo;Satellite C55;2024;4;0;2;16;32;Puerto USB no funciona correctamente;Reciclaje;No funcional
+158;Steven Fox;Administrador;Laptop;Dell;Pavilion 15;2021;3;1;1;4;256;Sistema operativo desactualizado;Reciclaje;Semi-funcional
+159;Mitchell Morales;Donante;PC;Dell;IdeaPad 3;2012;2;0;0;16;128;Batería inflada, debe ser reemplazada;Reacondicionamiento;Funcional
+160;David Young;Administrador;Laptop;HP;MatePad 10;2020;6;1;0;16;128;Pantalla con rayones leves, funcional;Reciclaje;Semi-funcional
+161;Thomas Johnson;Beneficiario;Monitor;ASUS;Satellite C55;2014;1;1;2;16;64;No enciende, posible daño en placa base;Educativo;No funcional
+162;Madison Graves;Administrador;Tablet;HP;Satellite C55;2012;7;1;3;4;64;Disco duro con sectores dañados;Reciclaje;Funcional
+163;Gabriel Maldonado;Técnico;Monitor;Samsung;MatePad 10;2019;8;0;2;4;32;Sistema operativo desactualizado;Educativo;Semi-funcional
+164;Lisa Ortiz;Técnico;Monitor;HP;Satellite C55;2014;2;0;3;16;256;Presenta errores de arranque en BIOS;Educativo;Funcional
+165;Christine Weaver;Técnico;Celular;Samsung;iPhone X;2022;9;0;3;4;32;Puerto HDMI funcional, VGA sin señal;Reacondicionamiento;Funcional
+166;Patrick Kidd;Administrador;Impresora;ASUS;Satellite C55;2021;5;1;1;2;128;Puerto HDMI funcional, VGA sin señal;Reacondicionamiento;Funcional
+167;Joseph Howard;Administrador;PC;Dell;iPhone X;2014;7;0;0;16;64;Conector de carga suelto, requiere ajuste;Reciclaje;Funcional
+168;Matthew Carr;Técnico;Celular;Apple;iPhone X;2013;3;0;1;4;512;Funcionamiento estable tras formateo;Reciclaje;Funcional
+169;Brian Stevenson;Beneficiario;Tablet;Lenovo;MatePad 10;2017;5;0;3;8;256;Sensor táctil presenta errores intermitentes;Educativo;No funcional
+170;Lindsay Alexander;Administrador;Celular;Huawei;VivoBook X;2015;10;1;0;16;64;Sistema operativo desactualizado;Reacondicionamiento;Semi-funcional
+171;Jessica Garcia;Administrador;PC;Huawei;iPhone X;2019;4;1;2;4;128;Disco duro con sectores dañados;Reacondicionamiento;No funcional
+172;Jill Glass;Administrador;Monitor;Samsung;MatePad 10;2012;1;0;0;4;64;Puerto USB no funciona correctamente;Reacondicionamiento;Funcional
+173;Cody Anderson Jr.;Donante;Impresora;Dell;IdeaPad 3;2014;7;0;0;2;64;Batería descargada, requiere cambio;Reacondicionamiento;Semi-funcional
+174;James Alvarez;Administrador;Impresora;Huawei;Inspiron 14;2024;7;0;1;2;128;Pantalla con rayones leves, funcional;Reacondicionamiento;No funcional
+175;David Thomas;Donante;Celular;Acer;UltraWide 29;2016;6;0;2;16;512;Carcasa dañada pero componentes internos intactos;Reciclaje;Semi-funcional
+176;Michael Caldwell;Beneficiario;Impresora;Acer;IdeaPad 3;2023;1;0;3;2;32;Batería descargada, requiere cambio;Reacondicionamiento;No funcional
+177;Erika Parker;Técnico;Impresora;LG;IdeaPad 3;2023;4;0;3;2;512;Funcionamiento estable tras formateo;Educativo;No funcional
+178;Jessica Riddle;Beneficiario;Monitor;Huawei;MatePad 10;2023;1;1;0;16;64;Pantalla en buen estado y batería funcional;Reciclaje;Semi-funcional
+179;Stephanie Huffman;Beneficiario;Tablet;Toshiba;VivoBook X;2024;7;0;3;16;512;Presenta errores de arranque en BIOS;Reacondicionamiento;Semi-funcional
+180;Cory Hughes;Administrador;Impresora;LG;iPhone X;2019;6;0;2;8;512;Cámara no detectada por el sistema;Reacondicionamiento;Semi-funcional
+181;Micheal Scott;Administrador;PC;Lenovo;Pavilion 15;2014;4;0;3;8;512;Cámara no detectada por el sistema;Educativo;Funcional
+182;Kevin Cortez;Beneficiario;Celular;Dell;MatePad 10;2013;2;0;2;8;256;Batería descargada, requiere cambio;Educativo;No funcional
+183;Savannah Curtis;Administrador;Laptop;Acer;Galaxy A20;2014;8;1;1;4;32;Pantalla en buen estado y batería funcional;Reciclaje;Semi-funcional
+184;Victor Morgan;Donante;Monitor;LG;MatePad 10;2023;1;0;2;4;64;Batería descargada, requiere cambio;Reciclaje;Funcional
+185;Alicia Johnston;Administrador;Impresora;Dell;Pavilion 15;2019;6;1;3;4;256;Teclado y touchpad en óptimo estado;Reciclaje;Funcional
+186;Ruben Santana DDS;Beneficiario;PC;Dell;iPhone X;2017;1;1;3;4;32;Teclado y touchpad en óptimo estado;Reacondicionamiento;No funcional
+187;David Shepherd;Donante;PC;Acer;Satellite C55;2018;5;1;3;4;64;Altavoces no emiten sonido;Reciclaje;No funcional
+188;Stephanie Butler;Administrador;Celular;Dell;Pavilion 15;2014;3;0;0;4;32;Cámara no detectada por el sistema;Reacondicionamiento;Semi-funcional
+189;Michael Jones;Técnico;PC;Huawei;VivoBook X;2024;3;0;2;16;512;Disco duro con sectores dañados;Reciclaje;Funcional
+190;Brent Hess;Administrador;Tablet;Acer;Galaxy A20;2013;8;0;2;16;512;Pantalla en buen estado y batería funcional;Reciclaje;Funcional
+191;Jennifer Rodriguez;Donante;Impresora;Huawei;VivoBook X;2019;8;0;2;8;512;Disco duro con sectores dañados;Reacondicionamiento;Semi-funcional
+192;Sarah Hill;Donante;Monitor;LG;Aspire 5;2022;5;0;1;2;256;Pantalla con rayones leves, funcional;Educativo;Semi-funcional
+193;Mr. Daniel Taylor;Técnico;Tablet;Lenovo;Inspiron 14;2012;1;0;3;16;64;Teclado y touchpad en óptimo estado;Reciclaje;Funcional
+194;Kimberly Johnson;Técnico;PC;Acer;Pavilion 15;2015;5;0;1;2;512;Puerto HDMI funcional, VGA sin señal;Reciclaje;Funcional
+195;Misty Martin;Donante;PC;Lenovo;Aspire 5;2018;3;1;0;8;128;Problemas de sobrecalentamiento al ejecutar tareas pesadas;Educativo;Semi-funcional
+196;Jennifer Johnson;Donante;PC;HP;MatePad 10;2022;8;0;2;16;256;Puerto USB no funciona correctamente;Reciclaje;Semi-funcional
+197;Christine Mathews;Técnico;Impresora;HP;UltraWide 29;2017;9;1;0;4;256;Puerto HDMI funcional, VGA sin señal;Educativo;No funcional
+198;Wayne Brooks;Administrador;Celular;Apple;Inspiron 14;2019;2;1;2;4;128;Teclado y touchpad en óptimo estado;Reciclaje;Semi-funcional
+199;Kevin Browning;Beneficiario;PC;Apple;iPhone X;2020;1;0;1;8;128;Batería inflada, debe ser reemplazada;Educativo;Funcional
+200;Patrick Valentine;Administrador;Laptop;Acer;Satellite C55;2015;1;0;0;2;32;Pantalla con rayones leves, funcional;Reacondicionamiento;No funcional

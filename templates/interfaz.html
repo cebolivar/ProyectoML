@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DonApp - Interfaz de Predicción</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='apa.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container py-5">
+    <div class="card mx-auto shadow" style="max-width:900px; border-radius:12px;">
+      <div class="card-body">
+        <h2 class="card-title text-center mb-4">🚀 DonApp - Clasificación Rápida</h2>
+        <p class="text-center text-muted">Selecciona las opciones del formulario. El ID se genera automáticamente.</p>
+
+        <form id="predictForm">
+          <div class="row g-3">
+
+            <div class="col-md-6">
+              <label class="form-label">Nombre Usuario</label>
+              <select name="nombre_usuario" class="form-select" required>
+                <option value="">Selecciona...</option>
+                <option value="Tecnico A">Técnico A</option>
+                <option value="Tecnico B">Técnico B</option>
+                <option value="Cliente">Cliente</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Tipo Usuario</label>
+              <select name="tipo_usuario" class="form-select" required>
+                <option value="">Selecciona...</option>
+                <option value="tecnico">Técnico</option>
+                <option value="cliente">Cliente</option>
+                <option value="administrador">Administrador</option>
+              </select>
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label">Tipo</label>
+              <select name="tipo" class="form-select" required>
+                <option value="">Selecciona...</option>
+                <option value="Celular">Celular</option>
+                <option value="Tablet">Tablet</option>
+                <option value="Portátil">Portátil</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label">Marca</label>
+              <select name="marca" class="form-select" required>
+                <option value="">Selecciona...</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Apple">Apple</option>
+                <option value="Huawei">Huawei</option>
+                <option value="Xiaomi">Xiaomi</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label">Modelo</label>
+              <select name="modelo" id="modelo" class="form-select" required>
+                <option value="">Selecciona...</option>
+                <option value="Galaxy S21">Galaxy S21</option>
+                <option value="iPhone 12">iPhone 12</option>
+                <option value="Redmi Note">Redmi Note</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+
+            <div class="col-md-3">
+              <label class="form-label">Año</label>
+              <select name="anio" class="form-select">
+                <option value="">Selecciona...</option>
+                {% for y in range(1990, 2026) %}
+                <option value="{{ y }}">{{ y }}</option>
+                {% endfor %}
+              </select>
+            </div>
+
+            <div class="col-md-3">
+              <label class="form-label">Estado físico</label>
+              <select name="estado_fisico" class="form-select">
+                <option value="">Selecciona...</option>
+                <option value="nuevo">Nuevo</option>
+                <option value="bueno">Bueno</option>
+                <option value="dañado">Dañado</option>
+              </select>
+            </div>
+
+            <div class="col-md-3">
+              <label class="form-label">Encendido</label>
+              <select name="encendido" class="form-select">
+                <option value="">Selecciona...</option>
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+                <option value="parcial">Parcial</option>
+              </select>
+            </div>
+
+            <div class="col-md-3">
+              <label class="form-label">Fallas</label>
+              <select name="fallas" class="form-select">
+                <option value="">Selecciona...</option>
+                <option value="no carga">No carga</option>
+                <option value="pantalla rota">Pantalla rota</option>
+                <option value="audio">Audio</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label">RAM</label>
+              <select name="ram" class="form-select">
+                <option value="">Selecciona...</option>
+                <option value="2GB">2GB</option>
+                <option value="4GB">4GB</option>
+                <option value="6GB">6GB</option>
+                <option value="8GB">8GB</option>
+                <option value="16GB">16GB</option>
+              </select>
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label">Almacenamiento</label>
+              <select name="almacenamiento" class="form-select">
+                <option value="">Selecciona...</option>
+                <option value="16GB">16GB</option>
+                <option value="32GB">32GB</option>
+                <option value="64GB">64GB</option>
+                <option value="128GB">128GB</option>
+                <option value="256GB">256GB</option>
+              </select>
+            </div>
+
+            <div class="col-md-4">
+              <label class="form-label">Destino previsto</label>
+              <select name="destino" class="form-select">
+                <option value="">Selecciona...</option>
+                <option value="Reparación">Reparación</option>
+                <option value="Reciclaje">Reciclaje</option>
+                <option value="Donación">Donación</option>
+                <option value="Venta">Venta</option>
+              </select>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label">Descripción (opcional)</label>
+              <textarea name="descripcion" class="form-control" rows="3" placeholder="Detalle opcional"></textarea>
+            </div>
+
+            <div class="col-12 d-flex justify-content-end">
+              <button type="submit" class="btn btn-success">Obtener Predicción y Guardar</button>
+            </div>
+          </div>
+        </form>
+
+        <hr class="my-4">
+
+        <div id="resultBox" class="p-3 d-none">
+          <h5>Predicción:</h5>
+          <div id="predText" class="alert alert-info"></div>
+
+          <h6>Acciones:</h6>
+          <div class="d-flex gap-2">
+            <button id="sendFeedbackBtn" class="btn btn-outline-primary">Enviar Feedback (si es incorrecta)</button>
+            <a href="{{ url_for('index') }}" class="btn btn-secondary">Volver</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<script>
+document.getElementById('predictForm').addEventListener('submit', async function(e){
+  e.preventDefault();
+  const form = e.target;
+  const data = Object.fromEntries(new FormData(form).entries());
+
+  const resp = await fetch('/predict', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data)
+  });
+
+  const j = await resp.json();
+  const box = document.getElementById('resultBox');
+  const predText = document.getElementById('predText');
+  box.classList.remove('d-none');
+
+  if (resp.ok) {
+    predText.innerHTML = `<strong>ID asignado:</strong> ${j.id_usuario} <br><strong>Predicción:</strong> ${j.prediccion_ml}`;
+    window._lastSaved = { modelo: data.modelo, prediccion_ml: j.prediccion_ml, id_usuario: j.id_usuario };
+  } else {
+    predText.textContent = 'Error en la predicción: ' + (j.error || JSON.stringify(j));
+  }
+});
+
+document.getElementById('sendFeedbackBtn').addEventListener('click', async function(){
+  const real = prompt('Ingresa la clasificación CORRECTA para este dispositivo:');
+  if (!real) return alert('Feedback cancelado.');
+
+  const payload = {
+    modelo: window._lastSaved?.modelo || document.getElementById('modelo').value,
+    clasificacion_real: real
+  };
+
+  const resp = await fetch('/feedback', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  });
+
+  const j = await resp.json();
+  if (resp.ok) alert('Feedback guardado');
+  else alert('Error guardando feedback: ' + (j.error || JSON.stringify(j)));
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

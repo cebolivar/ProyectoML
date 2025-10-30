@@ -130,7 +130,6 @@ def predict():
     except Exception as e:
         return jsonify({'error': f'Error en la predicción: {str(e)}'}), 500
 
-    # Guardar registro en data CSV
     try:
         ensure_data_file()
         cols = ['id_usuario','nombre_usuario','tipo_usuario','tipo','marca','modelo','anio',

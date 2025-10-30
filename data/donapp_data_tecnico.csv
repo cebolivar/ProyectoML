@@ -199,3 +199,17 @@
 198;Wayne Brooks;Administrador;Celular;Apple;Inspiron 14;2019;2;1;2;4;128;Teclado y touchpad en óptimo estado;Reciclaje;Semi-funcional
 199;Kevin Browning;Beneficiario;PC;Apple;iPhone X;2020;1;0;1;8;128;Batería inflada, debe ser reemplazada;Educativo;Funcional
 200;Patrick Valentine;Administrador;Laptop;Acer;Satellite C55;2015;1;0;0;2;32;Pantalla con rayones leves, funcional;Reacondicionamiento;No funcional
+;Tecnico A;tecnico;Celular;Samsung;Galaxy S21;2004;nuevo;si;no carga;8GB;128GB;SD;Donación;Funcional
+;Tecnico A;tecnico;Celular;Samsung;Galaxy S21;2004;nuevo;si;no carga;8GB;128GB;SD;Reciclaje;Funcional
+;Tecnico A;tecnico;Celular;Samsung;Galaxy S21;2004;nuevo;si;no carga;8GB;128GB;SD;Reciclaje;Funcional
+;Tecnico A;tecnico;Celular;Samsung;Galaxy S21;2004;dañado;si;pantalla rota;8GB;128GB;SD;Reciclaje;Funcional
+;Tecnico A;tecnico;Celular;Samsung;Galaxy S21;2004;dañado;si;pantalla rota;8GB;128GB;SD;Reciclaje;Funcional
+;Tecnico A;tecnico;Celular;Samsung;Galaxy S21;2004;dañado;si;pantalla rota;8GB;128GB;SD;Reciclaje;Funcional
+;Cliente;tecnico;Celular;Samsung;Galaxy S21;2004;dañado;si;pantalla rota;8GB;128GB;SD;Reciclaje;Funcional
+;Cliente;tecnico;Celular;Samsung;Galaxy S21;2004;dañado;si;pantalla rota;8GB;128GB;SD;Reciclaje;Funcional
+;Cliente;tecnico;Celular;Samsung;Galaxy S21;2004;dañado;si;pantalla rota;2GB;16GB;SD;Reciclaje;Funcional
+;Tecnico B;administrador;Celular;Samsung;Galaxy S21;2004;dañado;si;pantalla rota;2GB;16GB;SD;Reciclaje;Funcional
+;Tecnico B;administrador;Celular;Samsung;Galaxy S21;1990;dañado;si;pantalla rota;2GB;16GB;SD;Reciclaje;Funcional
+;Tecnico B;administrador;Celular;Samsung;Galaxy S21;1990;dañado;si;pantalla rota;2GB;16GB;SD;Reciclaje;Funcional
+;Tecnico B;administrador;Celular;Samsung;Galaxy S21;1990;dañado;si;pantalla rota;2GB;16GB;SD;Reparación;Funcional
+;Tecnico B;administrador;Celular;Samsung;Galaxy S21;1990;dañado;si;pantalla rota;2GB;64GB;SD;Reparación;Funcional

@@ -202,6 +202,9 @@ def receive_feedback():
     except Exception as e:
         return jsonify({'error': f'Error al procesar el feedback: {str(e)}'}), 500
 
+@app.route('/casuistica')
+def casuistica():
+    return render_template('casuistica.html')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)

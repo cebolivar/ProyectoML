@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Casos ML — DonApp</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Ajustes rápidos para móvil */
+    .case-card { border-radius: 12px; }
+    .case-badge { font-size: .72rem; }
+    .case-title { font-weight:700; font-size:1.05rem; }
+    .small-muted { font-size: .86rem; color:#6c757d; }
+    @media (max-width: 480px) {
+      .case-title { font-size: 1rem; }
+      .lead { font-size: .95rem; }
+      .btn-sm { font-size: .8rem; padding:.38rem .6rem; }
+    }
+  </style>
+</head>
+<body class="bg-light">
+  <div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <div>
+        <h3 class="mb-0">📚 Casuística ML — DonApp</h3>
+        <div class="small-muted">Ejemplos prácticos, datos requeridos y métricas. Adaptado para celular.</div>
+      </div>
+      <div class="text-end">
+        <a class="btn btn-outline-primary btn-sm" href="{{ url_for('ml_project') if (url_for is defined) else '/proyecto' }}">Ir al proyecto</a>
+      </div>
+    </div>
+
+    <!-- Buscador simple -->
+    <div class="mb-3">
+      <input id="searchInput" type="search" class="form-control form-control-sm" placeholder="Buscar caso (ej. recomendador, fraude, NLP...)">
+    </div>
+
+    <!-- Lista de casos (accordion para móviles) -->
+    <div class="accordion" id="casesAccordion">
+
+      <!-- Caso 1: Recomendador -->
+      <div class="accordion-item case-card mb-2">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#caseOne" aria-expanded="false" aria-controls="caseOne">
+            <div class="me-2"><span class="badge bg-info case-badge">Recomendador</span></div>
+            <div class="case-title">Sugerir campañas/ONGs personalizadas</div>
+          </button>
+        </h2>
+        <div id="caseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#casesAccordion">
+          <div class="accordion-body">
+            <p class="lead mb-1">Objetivo: aumentar conversión y donaciones mostrando campañas relevantes.</p>
+            <ul class="mb-2">
+              <li><strong>Datos:</strong> historial de interacciones, donaciones, atributos de usuario y campañas.</li>
+              <li><strong>Técnicas:</strong> filtrado colaborativo, embeddings, ranking (LightGBM, TensorRec, ANN).</li>
+              <li><strong>KPI:</strong> CTR, tasa de conversión, AOV (valor promedio de donación).</li>
+            </ul>
+            <div class="d-flex gap-2">
+              <a class="btn btn-sm btn-primary" href="{{ url_for('interfaz') if (url_for is defined) else '/interfaz' }}">Ir a demo</a>
+              <a class="btn btn-sm btn-outline-secondary" href="#">Notebook EDA</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Caso 2: Scoring de Propensión -->
+      <div class="accordion-item case-card mb-2">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#caseTwo" aria-expanded="false" aria-controls="caseTwo">
+            <div class="me-2"><span class="badge bg-success case-badge">Scoring</span></div>
+            <div class="case-title">Propensión a donar / Valor esperado</div>
+          </button>
+        </h2>
+        <div id="caseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#casesAccordion">
+          <div class="accordion-body">
+            <p class="mb-1">Objetivo: segmentar usuarios para campañas dirigidas.</p>
+            <ul class="mb-2">
+              <li><strong>Datos:</strong> demografía, historial de sesiones, historial de donaciones, respuesta a campañas previas.</li>
+              <li><strong>Técnicas:</strong> XGBoost/CatBoost, calibración de probabilidades, modelización de LTV.</li>
+              <li><strong>KPI:</strong> AUC-ROC, PR-AUC, uplift en conversiones.</li>
+            </ul>
+            <div class="d-flex gap-2">
+              <a class="btn btn-sm btn-primary" href="#">Pipeline & Features</a>
+              <a class="btn btn-sm btn-outline-secondary" href="#">Script training</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Caso 3: Detección de fraude -->
+      <div class="accordion-item case-card mb-2">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#caseThree" aria-expanded="false" aria-controls="caseThree">
+            <div class="me-2"><span class="badge bg-danger case-badge">Seguridad</span></div>
+            <div class="case-title">Detección de fraude en transacciones</div>
+          </button>
+        </h2>
+        <div id="caseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#casesAccordion">
+          <div class="accordion-body">
+            <p class="mb-1">Objetivo: identificar donaciones/fraudes atípicos.</p>
+            <ul class="mb-2">
+              <li><strong>Datos:</strong> patrón de transacciones, IP/geolocalización, velocidad, dispositivos.</li>
+              <li><strong>Técnicas:</strong> reglas, Isolation Forest, autoencoders, modelos supervisados con features agregados.</li>
+              <li><strong>KPI:</strong> tasa de falsos positivos, tiempo de detección, % fraude bloqueado.</li>
+            </ul>
+            <div class="d-flex gap-2">
+              <a class="btn btn-sm btn-primary" href="#">Alertas en tiempo real</a>
+              <a class="btn btn-sm btn-outline-secondary" href="#">Ver reglas</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Caso 4: Forecasting -->
+      <div class="accordion-item case-card mb-2">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#caseFour" aria-expanded="false" aria-controls="caseFour">
+            <div class="me-2"><span class="badge bg-warning case-badge">Forecast</span></div>
+            <div class="case-title">Predicción de recaudo por campaña</div>
+          </button>
+        </h2>
+        <div id="caseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#casesAccordion">
+          <div class="accordion-body">
+            <p class="mb-1">Objetivo: planificar recursos y campañas con predicción de ingresos.</p>
+            <ul class="mb-2">
+              <li><strong>Datos:</strong> series temporales de recaudo, calendario de campañas, promociones y eventos.</li>
+              <li><strong>Técnicas:</strong> Prophet, SARIMA, modelos basados en ML (LGBM) con features calendáricos.</li>
+              <li><strong>KPI:</strong> MAE, MAPE en horizonte 1–30 días.</li>
+            </ul>
+            <div class="d-flex gap-2">
+              <a class="btn btn-sm btn-primary" href="#">Notebook forecasting</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Caso 5: NLP -->
+      <div class="accordion-item case-card mb-2">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#caseFive" aria-expanded="false" aria-controls="caseFive">
+            <div class="me-2"><span class="badge bg-secondary case-badge">NLP</span></div>
+            <div class="case-title">Clasificación automática de feedback y extracción</div>
+          </button>
+        </h2>
+        <div id="caseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#casesAccordion">
+          <div class="accordion-body">
+            <p class="mb-1">Objetivo: etiquetar feedback y extraer motivos/entidades.</p>
+            <ul class="mb-2">
+              <li><strong>Datos:</strong> comentarios, tickets, descripciones.</li>
+              <li><strong>Técnicas:</strong> TF-IDF + classifiers, fine-tuned BERT/Hugging Face para texto corto.</li>
+              <li><strong>KPI:</strong> F1 por clase, reducción de tiempo manual.</li>
+            </ul>
+            <div class="d-flex gap-2">
+              <a class="btn btn-sm btn-primary" href="#">Pipeline NLP</a>
+              <a class="btn btn-sm btn-outline-secondary" href="#">Ejemplos de etiquetas</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Caso 6: OCR -->
+      <div class="accordion-item case-card mb-2">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#caseSix" aria-expanded="false" aria-controls="caseSix">
+            <div class="me-2"><span class="badge bg-dark case-badge">OCR</span></div>
+            <div class="case-title">Extracción de datos de comprobantes / fotos</div>
+          </button>
+        </h2>
+        <div id="caseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#casesAccordion">
+          <div class="accordion-body">
+            <p class="mb-1">Objetivo: automatizar lectura y verificación de recibos o comprobantes.</p>
+            <ul class="mb-2">
+              <li><strong>Datos:</strong> imágenes, metadatos, etiquetas manuales.</li>
+              <li><strong>Técnicas:</strong> Tesseract/OCR + post-procesado, modelos de visión si es necesario.</li>
+              <li><strong>KPI:</strong> precisión de extracción, tiempo por comprobante.</li>
+            </ul>
+            <div class="d-flex gap-2">
+              <a class="btn btn-sm btn-primary" href="#">Demo OCR</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-4 small-muted">
+      ¿Quieres que genere notebooks, scripts de entrenamiento o endpoints para alguno de estos casos? Indica el caso y preparo el starter.
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Buscador simple en cliente
+  const input = document.getElementById('searchInput');
+  input && input.addEventListener('input', function(){
+    const q = this.value.trim().toLowerCase();
+    const items = document.querySelectorAll('#casesAccordion .accordion-item');
+    items.forEach(item => {
+      const text = item.innerText.toLowerCase();
+      item.style.display = q && !text.includes(q) ? 'none' : '';
+    });
+  });
+</script>
+</body>
+</html>

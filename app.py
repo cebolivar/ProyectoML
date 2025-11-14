@@ -115,13 +115,12 @@ def interfaz():
 @app.route('/predict', methods=['POST'])
 def predict():
     if model is None or tfidf_vectorizer is None or label_encoder is None:
-        return jsonify({'error': 'Modelos no cargados. Genera los archivos .joblib primero.'}), 503
+        return jsonify({'error': 'Modelos no cargados'}), 500
 
-    # aceptar JSON o form-data
-    payload = request.get_json(force=True) if request.is_json else request.form.to_dict()
-    modelo_text = (payload.get('modelo') or '').strip()
+    data = request.get_json(force=True)
+    modelo_text = (data.get('modelo') or '').strip()
     if not modelo_text:
-        return jsonify({'error': 'El campo "modelo" es requerido.'}), 400
+        return jsonify({'error': 'Campo modelo vacío'}), 400
 
     try:
         vec = tfidf_vectorizer.transform([modelo_text])
@@ -130,18 +129,19 @@ def predict():
     except Exception as e:
         return jsonify({'error': f'Error en la predicción: {str(e)}'}), 500
 
+    # guardar (intento silencioso)
     try:
         ensure_data_file()
         cols = ['id_usuario','nombre_usuario','tipo_usuario','tipo','marca','modelo','anio',
                 'estado_fisico','encendido','fallas','ram','almacenamiento','descripcion',
                 'destino','prediccion_ml']
-        record = {c: payload.get(c, '') for c in cols}
+        record = {c: data.get(c, '') for c in cols}
         record['prediccion_ml'] = pred_label
         pd.DataFrame([record]).to_csv(DATA_FILE, mode='a', header=False, index=False, sep=';')
-    except Exception as e:
-        return jsonify({'error': f'No se pudo guardar registro: {str(e)}'}), 500
+    except Exception:
+        pass
 
-    return jsonify({'modelo_ingresado': modelo_text, 'prediccion_ml': pred_label}), 200
+    return jsonify({'modelo': modelo_text, 'prediccion': pred_label})
 
 # Ruta alternativa para renderizar resultado en plantilla (form POST -> muestra predict.html)
 @app.route('/predict_page', methods=['POST'])

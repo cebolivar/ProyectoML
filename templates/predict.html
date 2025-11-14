@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Predicción de Modelo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Asegura que el padding no cambie el ancho total */
+        }
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        button {
+            background-color: #5cb85c;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+        .note {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #f0ad4e;
+            color: #333;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Enviar Datos para Predicción</h1>
+
+        <form action="/predict" method="POST">
+            
+            <p class="note">
+                **Nota Importante:** Tu código Flask requiere **todos** los campos 
+                adicionales para guardar el registro. El campo "modelo" es el único 
+                usado para la predicción, pero debes incluirlos todos para evitar 
+                errores al guardar en el CSV.
+            </p>
+            
+            <label for="modelo">Texto del Modelo (¡Requerido para ML!):</label>
+            <textarea id="modelo" name="modelo" required placeholder="Ej: Laptop Dell Inspiron 15 5000"></textarea>
+
+            <label for="id_usuario">ID de Usuario:</label>
+            <input type="text" id="id_usuario" name="id_usuario" placeholder="Ej: U1234">
+
+            <label for="tipo">Tipo de Equipo:</label>
+            <input type="text" id="tipo" name="tipo" placeholder="Ej: Laptop">
+            
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" name="marca" placeholder="Ej: Dell">
+            
+            <label for="anio">Año:</label>
+            <input type="text" id="anio" name="anio" placeholder="Ej: 2020">
+            
+            <label for="descripcion">Descripción Adicional:</label>
+            <textarea id="descripcion" name="descripcion" placeholder="Cualquier otra información relevante"></textarea>
+            
+            <button type="submit">Obtener Predicción</button>
+        </form>
+    </div>
+
+</body>
+</html>

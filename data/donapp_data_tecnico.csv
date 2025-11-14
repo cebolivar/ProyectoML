@@ -213,3 +213,8 @@
 ;Tecnico B;administrador;Celular;Samsung;Galaxy S21;1990;dañado;si;pantalla rota;2GB;16GB;SD;Reciclaje;Funcional
 ;Tecnico B;administrador;Celular;Samsung;Galaxy S21;1990;dañado;si;pantalla rota;2GB;16GB;SD;Reparación;Funcional
 ;Tecnico B;administrador;Celular;Samsung;Galaxy S21;1990;dañado;si;pantalla rota;2GB;64GB;SD;Reparación;Funcional
+;Cliente;cliente;Tablet;Apple;Otro;2004;dañado;no;pantalla rota;4GB;64GB;;Reciclaje;Funcional
+;Tecnico A;cliente;Celular;Samsung;Galaxy S21;2002;dañado;no;pantalla rota;8GB;64GB;;Donación;Funcional
+;Tecnico A;cliente;Celular;Samsung;Galaxy S21;2002;dañado;no;pantalla rota;8GB;64GB;;Donación;Funcional
+;Tecnico B;tecnico;Tablet;Huawei;Otro;2009;dañado;no;otro;8GB;128GB;;Reciclaje;Funcional
+;Cliente;cliente;Celular;Apple;iPhone 12;2015;bueno;si;pantalla rota;8GB;256GB;;Donación;No funcional
